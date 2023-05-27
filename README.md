@@ -8,14 +8,12 @@ The basic steps done by the fake_news_py.torch are
 
 -split the dataset into test and train
 
--save the test and train datasets (tricky passage, may be possible to simplify it)
+-perform dataframe tokenization, creating a vocabulary
+
+-generate data batch, using dataloader, to feed the model
 
 # TO DO LIST
--Perform dataframe tokenization
-
--Generate data batch
-
--Load the data
+-Better text preprocessing
 
 -Train the model (possible different ones)
 
