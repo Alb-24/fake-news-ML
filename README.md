@@ -1,20 +1,24 @@
-# fake-news-ML
+# Fake News recognition using ML
 
 Based on Kaggle fake and real news Dataset: https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
 
-The basic steps done by the fake_news_py.torch are
+The basic steps done are:
 
--read the two datasets and save them as a combined one, adding the target label
+-read the two datasets of true and fake news and save them as a combined one, adding the target label
 
 -split the dataset into test and train
 
--perform dataframe tokenization, creating a vocabulary
+-apply text preprocessing
 
--generate data batch, using dataloader, to feed the model
+-create 3 possible feature representations: tokenizer, vectorizer, tf-idf
 
-# TO DO LIST
+-define classifiers: SGD, RF, BLSTM, Logistic Regression
+
+-create 10 splits, training and testing all classifiers
+
+-compare results obtained as classification reports and confusion matrices
+
+# POSSIBLE FURTHER ENHANCEMENTS
 -Better text preprocessing
 
--Train the model (possible different ones)
-
--View model(s) performance and compare them
+-Better tuning of Hyperparameters
